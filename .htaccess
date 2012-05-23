@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /portage/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /portage/index.php [L]
+</IfModule>
+
+Options +Indexes
+
+php_flag magic_quotes_gpc off
