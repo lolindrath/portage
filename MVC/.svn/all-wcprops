@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/158/lolindrath/trunk/Projects/Portage/MVC
+END
+MvcController.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/152/lolindrath/trunk/Projects/Portage/MVC/MvcController.php
+END
+MvcSession.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/152/lolindrath/trunk/Projects/Portage/MVC/MvcSession.php
+END
+MvcAuthUser.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/156/lolindrath/trunk/Projects/Portage/MVC/MvcAuthUser.php
+END
+MvcModel.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/158/lolindrath/trunk/Projects/Portage/MVC/MvcModel.php
+END
+MvcAuth.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/152/lolindrath/trunk/Projects/Portage/MVC/MvcAuth.php
+END

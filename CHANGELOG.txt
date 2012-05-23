@@ -1,0 +1,77 @@
+12 July 2007
+	* finished all the MVC changes - except for Contacts since I'm ripping that apart
+
+04 July 2007
+	* finished the ContextModel
+
+03 July 2007
+	* finished the ProjectModel
+
+02 July 2007
+	* changed authentication to cookie based, expires in 30 days
+
+30 June 2007
+	* fixed some images that needed BASE_URL
+	* started to add controllers
+		* IndexController
+		* TodoController
+		* TodoEditController
+		* LoginController
+		* AgingController
+		* WeekController
+	* adding controllers completed
+	* made config.php into a singleton Config class
+
+27 June 2007
+	* got rid of tons of duplicate javascript code and fixed check/delete on all pages
+
+26 June 2007
+	* made my own login auth system
+	* made config.php check the host to see what settings to use
+	* added javascript to focus on first login field
+
+25 June 2007
+	* disabled authorization - gotta make my own
+	* finally fixed Ajax on main page I think
+	* no more base href tag - messed too many things up
+
+24 June 2007
+	* switched everything over to mootools
+	* made popup calendar default to today as a startdate if no due date
+	* added views for waiting for and someday/maybe
+
+23 June 2007
+	* added a Tomorrow link
+	* installed new, cleaner date picker
+	* changed navigation to tabs
+
+6  March 2006
+	* added breakdown of age to years, months weeks, days
+
+1  March 2006
+	* Changed the name from phpGTD to Portage
+
+24 February 2006
+	* added execution time
+	
+23 February 2006
+	* added a weekly view
+	
+20 February 2006
+	* fixed the need www on a link problem by automagically writing the base
+	href for the document. I think Ajax doesn't let you do a call between
+	www.lolindrath.com and lolindrath.com for security reasons (could be a
+	dangerous site)
+	* Made the not_done span update dynamically when you complete or delete a
+	todo
+	* fixed some javascript errors in CalendarPopup.js
+
+16 February 2006
+	* Added a Today link to set the date to today
+	* moved images to img to make it cleaner
+
+1 April 2005
+	* Text view now has a header
+
+31 March 2005 - Lolindrath
+	* added a thing so it highlights next actions older than 21 days yellow so you can see which have hung around for too long
