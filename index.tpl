@@ -38,7 +38,7 @@
 
 <div id="Tabs">
 <ul>
-	<li><a accesskey="t" href="<?=$c->BASE_URL?>" title="Home Access Key: Alt+T">Home</a></li>
+	<li><a accesskey="t" href="<?=$c->BASE_URL?>/" title="Home Access Key: Alt+T">Home</a></li>
 	<li><a accesskey="w" href="<?=$c->BASE_URL?>/week/" title="Weekly Summary Key: Alt+W">Agenda</a></li>
 	<li><a accesskey="w" href="<?=$c->BASE_URL?>/waitingfor/" title="Waiting For: Alt+W">@Waiting For</a></li>
 	<li><a accesskey="w" href="<?=$c->BASE_URL?>/somedaymaybe/" title="Someday/Maybe Key: Alt+W">@Someday/Maybe</a></li>

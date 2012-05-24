@@ -22,7 +22,7 @@ class LoginController extends MvcController
 			if($row['password'] == md5($_REQUEST['password']))
 			{
 				setcookie('loggedin', 1, time()+60*60*24*30, "/"); //expires in 30 days
-				header("Location: " . $c->BASE_URL);
+				header("Location: " . $c->BASE_URL . '/');
 				exit();
 			}
 			else
