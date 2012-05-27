@@ -4,8 +4,14 @@ RewriteBase /portage/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /portage/index.php [L]
+
+# Add trailing slash to directories without them so DirectoryIndex works.
+# This does not expose the internal URL.
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME} !/$
+RewriteRule ^(.*)$  $1/
+
 </IfModule>
 
 Options +Indexes
-
-php_flag magic_quotes_gpc off
+DirectorySlash off
