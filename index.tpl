@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="<?=$c->BASE_URL?>/favicon.ico">
 	<style type="text/css" media="screen">
 		@import url(<?=$c->BASE_URL?>/standard.css);
 	</style>
