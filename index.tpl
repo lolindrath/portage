@@ -41,8 +41,10 @@
 <ul>
 	<li><a accesskey="t" href="<?=$c->BASE_URL?>/" title="Home Access Key: Alt+T">Home</a></li>
 	<li><a accesskey="w" href="<?=$c->BASE_URL?>/week/" title="Weekly Summary Key: Alt+W">Agenda</a></li>
-	<li><a accesskey="w" href="<?=$c->BASE_URL?>/waitingfor/" title="Waiting For: Alt+W">@Waiting For</a></li>
-	<li><a accesskey="w" href="<?=$c->BASE_URL?>/somedaymaybe/" title="Someday/Maybe Key: Alt+W">@Someday/Maybe</a></li>
+	<li><a accesskey="p" href="<?=$c->BASE_URL?>/project/" title="Project Key: Alt+P">Projects</a></li>
+	<li><a accesskey="c" href="<?=$c->BASE_URL?>/context/" title="Context Key: Alt+W">Contexts</a></li>
+	<li><a accesskey="w" href="<?=$c->BASE_URL?>/waitingfor/" title="Waiting For: Alt+W">Waiting For</a></li>
+	<li><a accesskey="w" href="<?=$c->BASE_URL?>/somedaymaybe/" title="Someday Key: Alt+W">Someday</a></li>
 	<li><a accesskey="a" href="<?=$c->BASE_URL?>/aging/" title="Aging Report Key: Alt+A">Aging</a></li>
 </ul>
 </div>
