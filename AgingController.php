@@ -8,7 +8,7 @@ class AgingController extends MvcController
 
 		$tpl->set('title', 'Portage - Aging');
 	
-		$body = & new Template('aging.tpl');
+		$body = & new Template('views/aging.tpl');
 		$body->set('c', Config::singleton());
 		$body->set('completed', $model->getLastCompleted());
 	

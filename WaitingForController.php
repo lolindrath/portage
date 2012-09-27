@@ -7,7 +7,7 @@ class WaitingForController extends MvcController
 	
 		$tpl->set('title', 'Portage - Waiting For');
 	
-		$body = & new Template('waitingfor.tpl');
+		$body = & new Template('views/waitingfor.tpl');
 		$body->set('c', Config::singleton());
 		
 		$tpl->set('content', $body->fetch());

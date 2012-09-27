@@ -7,7 +7,7 @@ class SomedayMaybeController extends MvcController
 	
 		$tpl->set('title', 'Portage - Someday/Maybe');
 	
-		$body = & new Template('somedaymaybe.tpl');
+		$body = & new Template('views/somedaymaybe.tpl');
 		$body->set('c', Config::singleton());
 		
 		$tpl->set('content', $body->fetch());

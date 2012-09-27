@@ -10,7 +10,7 @@ class LoginController extends MvcController
 		$c = Config::singleton();
 
 		$tpl->set('title', 'Portage - Login');
-		$body = & new Template('login.tpl');
+		$body = & new Template('views/login.tpl');
 		$body->set('c', Config::singleton());
 	
 		if($options[$c->offset+1] == 'submit')

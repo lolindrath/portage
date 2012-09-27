@@ -10,7 +10,7 @@ class WeekController extends MvcController
 
 		$tpl->set('title', 'Portage - Weekly');
 	
-		$body = & new Template('week.tpl');
+		$body = & new Template('views/week.tpl');
 		$body->set('c', Config::singleton());
 		$body->set('completed', $model->getLastCompleted());
 	

@@ -177,7 +177,7 @@ class ProjectModel extends MvcModel
 			print '<div class="contexts">';
 			$imgSrc = "collapse.png";
 	
-			$tpl = & new Template('singleproject.tpl');
+			$tpl = & new Template('views/singleproject.tpl');
 			$tpl->set('c', Config::singleton());
 			$tpl->set('projectID', $projectID);
 			$tpl->set('projectName', $projectName);

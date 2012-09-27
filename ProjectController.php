@@ -10,7 +10,7 @@ class ProjectController extends MvcController
 
 		$tpl->set('title', 'Portage - Projects');
 	
-		$body = & new Template('projects.tpl');
+		$body = & new Template('views/projects.tpl');
 		$body->set('c', Config::singleton());
 	
 		if($options[$c->offset+1] == "delete" && !empty($options[$c->offset+2]))
@@ -105,7 +105,7 @@ class ProjectController extends MvcController
 		}
 		else if($options[$c->offset+1] == "display" && !empty($options[$c->offset+2]))
 		{
-			$body = & new Template('project.tpl');
+			$body = & new Template('views/project.tpl');
 			$body->set('c', Config::singleton());
 			$body->set('project_id', $options[$c->offset+2]);
 			$todoModel = new TodoModel();

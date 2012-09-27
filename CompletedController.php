@@ -9,7 +9,7 @@ class CompletedController extends MvcController
 
 		$tpl->set('title', 'Portage - Projects');
 	
-		$body = & new Template('completed.tpl');
+		$body = & new Template('views/completed.tpl');
 		$body->set('c', Config::singleton());
 	
 		

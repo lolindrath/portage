@@ -9,7 +9,7 @@ class ContextController extends MvcController
 
 		$tpl->set('title', 'Portage - Contexts');
 	
-		$body = & new Template('contexts.tpl');
+		$body = & new Template('views/contexts.tpl');
 		$body->set('c', Config::singleton());
 		
 		if($options[$c->offset+1] == "delete" && !empty($options[$c->offset+2]))
@@ -100,7 +100,7 @@ class ContextController extends MvcController
 		else if($options[$c->offset+1] == "display" && !empty($options[$c->offset+2]))
 		{
 			$todoModel = new TodoModel();
-			$body =& new Template('todo.tpl');
+			$body =& new Template('views/todo.tpl');
 			$body->set('c', Config::singleton());
 			$body->set('completed', $todoModel->getLastCompleted());
 

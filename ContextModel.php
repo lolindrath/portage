@@ -173,11 +173,11 @@ class ContextModel extends MvcModel
 		}
 		else if($rowCount > 0)
 		{
-			$tpl = & new Template('singlecontext.tpl');
+			$tpl = & new Template('views/singlecontext.tpl');
 	
 			if($textView)
 			{
-				$tpl = & new Template('text_singlecontext.tpl');
+				$tpl = & new Template('views/text_singlecontext.tpl');
 			}
 	
 			$tpl->set('c', Config::singleton());

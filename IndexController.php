@@ -23,7 +23,7 @@ class IndexController extends MvcController
 			$_SERVER["REDIRECT_URL"] = "/portage/login";
 		}
 
-		$tpl = & new Template('index.tpl');
+		$tpl = & new Template('views/index.tpl');
 		$tpl->set('c', Config::singleton());
 
 		$options = explode("/", $_SERVER["REDIRECT_URL"]);
@@ -87,7 +87,7 @@ class IndexController extends MvcController
 		{
 			$todoModel = new TodoModel();
 			
-			$tpl = new Template('not_done.tpl');
+			$tpl = new Template('views/not_done.tpl');
 			$tpl->set('c', Config::singleton());
 			$tpl->set('not_done', $todoModel->getNotDone());
 		}
