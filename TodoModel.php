@@ -141,7 +141,7 @@ class TodoModel extends MvcModel
 			$add_edit = "add";
 		else
 			$add_edit = "edit";
-		$tpl = & new Template('todoform.tpl');
+		$tpl = & new Template('views/todoform.tpl');
 		$tpl->set('c', Config::singleton());
 		$tpl->set('id', $id);
 		$tpl->set('add_edit', $add_edit);
