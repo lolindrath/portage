@@ -23,7 +23,6 @@ include_once('WeekController.php');
 include_once('ContextController.php');
 include_once('ProjectController.php');
 include_once('TextController.php');
-include_once('ContactController.php');
 include_once('SomedayMaybeController.php');
 include_once('WaitingForController.php');
 include_once('CompletedController.php');

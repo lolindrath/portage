@@ -83,11 +83,6 @@ class IndexController extends MvcController
 			$text = new TextController();
 			$text->route($options, &$tpl);
 		}
-		else if($options[$c->offset] == "contact")
-		{
-			$contact = new ContactController();
-			$contact->route($options, &$tpl);
-		}
 		else if($options[$c->offset] == "not_done")
 		{
 			$todoModel = new TodoModel();
