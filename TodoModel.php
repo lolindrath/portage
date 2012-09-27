@@ -133,7 +133,7 @@ class TodoModel extends MvcModel
 
 	public static function DisplayTodoBox($id = "", $description = "", $notes = "", $context = "", $project = "", $due = "")
 	{
-		global $db, $options;
+		global $db, $options, $offset;
 		$contextModel = new ContextModel();
 		$projectModel = new ProjectModel();
 	
@@ -149,7 +149,7 @@ class TodoModel extends MvcModel
 		$tpl->set('notes', $notes);
 	
 		//this is a hack to set the fields correctly since it can't read the cookies yet (they were just set)
-		if($options[2] == 'submit')
+		if($options[$offset+1] == 'submit')
 		{
 			$tpl->set('context', $_REQUEST['context_edit_id']);
 			$tpl->set('project', $_REQUEST['project_id']);
